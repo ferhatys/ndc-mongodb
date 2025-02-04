@@ -18,11 +18,11 @@ jobs:
       - name: Install Nix ❄
         uses: DeterminateSystems/nix-installer-action@v4
 
-      - name: Link Cachix 🔌
-        uses: cachix/cachix-action@v12
-        with:
-          name: '${{ vars.CACHIX_CACHE_NAME }}'
-          authToken: '${{ secrets.CACHIX_CACHE_AUTH_TOKEN }}'
+      # - name: Link Cachix 🔌
+      #   uses: cachix/cachix-action@v12
+      #   with:
+      #     name: '${{ vars.CACHIX_CACHE_NAME }}'
+      #     authToken: '${{ secrets.CACHIX_CACHE_AUTH_TOKEN }}'
 
       - name: run unit tests 🔨
         run: nix build .#checks.x86_64-linux.test --print-build-logs
