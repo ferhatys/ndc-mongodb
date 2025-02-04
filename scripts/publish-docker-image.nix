@@ -8,7 +8,7 @@
   # These arguments are passed explicitly
   docker-images
 , format ? "oci"
-, registry ? { host = "ghcr.io"; repo = "hasura/ndc-mongodb"; }
+, registry ? { host = "ghcr.io"; repo = "ferhatys/ndc-mongodb"; }
 , target-protocol ? "docker://"
 
   # These arguments are automatically populated from nixpkgs via `callPackage`

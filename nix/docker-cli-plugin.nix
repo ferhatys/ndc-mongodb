@@ -1,4 +1,4 @@
-{ name ? "ghcr.io/hasura/mongodb-cli-plugin"
+{ name ? "ghcr.io/ferhatys/mongodb-cli-plugin"
 , mongodb-cli-plugin
 , dockerTools
 }:

@@ -1,7 +1,7 @@
 # This is a function that returns a derivation for a docker image.
 { mongodb-connector
 , dockerTools
-, name ? "ghcr.io/hasura/ndc-mongodb"
+, name ? "ghcr.io/ferhatys/ndc-mongodb"
 
   # See config options at https://github.com/moby/docker-image-spec/blob/main/spec.md
 , extraConfig ? { }
