@@ -80,7 +80,7 @@ jobs:
       - name: Build connector definition
         run: |
           set -e pipefail
-          export DOCKER_IMAGE="ghcr.io/hasura/ndc-mongodb:$GITHUB_REF_NAME"
+          export DOCKER_IMAGE="ghcr.io/ferhatys/ndc-mongodb:$GITHUB_REF_NAME"
           export CLI_VERSION=$GITHUB_REF_NAME
           make build
         working-directory: ./connector-definition
